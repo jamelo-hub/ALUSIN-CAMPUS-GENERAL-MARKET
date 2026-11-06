@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALUSIN CAMPUS & GENERAL MARKET | Buy · Sell · Request</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: { 50: '#faf8f5', 100: '#f3efe8', 200: '#e8e0d4', 300: '#d4c8b8' },
+            teal: { 50: '#f0fdfa', 100: '#ccfbf1', 400: '#2dd4bf', 500: '#14b8a6', 600: '#0d9488', 700: '#0f766e', 800: '#115e59', 900: '#134e4a' },
+            clay: { 400: '#c17a5a', 500: '#a85d42', 600: '#8b4a35' },
+            ink: { 900: '#1a1a1a', 800: '#2d2d2d', 700: '#3f3f3f', 600: '#525252', 500: '#6b6b6b' }
+          },
+          fontFamily: {
+            display: ['Fraunces', 'serif'],
+            sans: ['Outfit', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '0 4px 20px -4px rgba(19, 78, 74, 0.12)',
+            card: '0 2px 12px -2px rgba(0,0,0,0.06)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Outfit', system-ui, sans-serif;
+      background-color: #faf8f5;
+      background-image:
+        radial-gradient(ellipse at 15% 0%, rgba(20, 184, 166, 0.07) 0%, transparent 50%),
+        radial-gradient(ellipse at 85% 100%, rgba(193, 122, 90, 0.05) 0%, transparent 45%);
+      min-height: 100vh;
+    }
+    .font-display { font-family: 'Fraunces', serif; }
+    .card-hover { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .card-hover:hover { transform: translateY(-2px); box-shadow: 0 10px 24px -6px rgba(19, 78, 74, 0.12); }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.25);
+      border-color: #14b8a6;
+    }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-thumb { background: #99f6e4; border-radius: 3px; }
+  </style>
+</head>
+<body class="text-ink-800 antialiased">
+  <div id="app" class="min-h-screen flex flex-col pb-20 md:pb-0"></div>
+  <script src="app.js"></script>
+</body>
+</html>
